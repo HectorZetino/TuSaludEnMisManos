@@ -42,8 +42,8 @@ namespace TuSaludEnMisManos.Controllers
                         {
                             id_medicamento =Convert.ToInt32(row.Split(',')[0]),
                             nombre = row.Split(',')[1],
-                            descripcion = row.Split('\"')[1],
-                            casa_productora = row.Split('\"')[3],
+                            descripcion = row.Split(',')[1],
+                            casa_productora = row.Split(',')[3],
                             precio = row.Split(',')[4],
                             existencia = Convert.ToInt32( row.Split(',')[5])
                         });
