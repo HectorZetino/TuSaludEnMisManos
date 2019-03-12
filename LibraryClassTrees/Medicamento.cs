@@ -5,9 +5,9 @@ using System.Web;
 
 namespace TuSaludEnMisManos.Models
 {
-    public class Medicamento
+    public class Medicamento<T>
     {
-        public int id_medicamento { get; set; }
+        public T Id_medicamento { get; set; }
         public string nombre { get; set; }
         public string descripcion { get; set; }
         public string casa_productora { get; set; }

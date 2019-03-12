@@ -175,3 +175,5 @@ C:\Users\leste\source\repos\TuSaludEnMisManos\TuSaludEnMisManos\obj\Debug\TuSalu
 C:\Users\leste\source\repos\TuSaludEnMisManos\TuSaludEnMisManos\obj\Debug\TuSaludEnMisManos.dll
 C:\Users\leste\source\repos\TuSaludEnMisManos\TuSaludEnMisManos\obj\Debug\TuSaludEnMisManos.pdb
 >>>>>>> master
+C:\URL- Primer ciclo 2019\Estructura de datos\Laboratorios\TuSaludEnMisManos\TuSaludEnMisManos\TuSaludEnMisManos\bin\LibraryClassTrees.dll
+C:\URL- Primer ciclo 2019\Estructura de datos\Laboratorios\TuSaludEnMisManos\TuSaludEnMisManos\TuSaludEnMisManos\bin\LibraryClassTrees.pdb
