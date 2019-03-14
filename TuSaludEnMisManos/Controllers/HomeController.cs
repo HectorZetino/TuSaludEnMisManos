@@ -12,9 +12,6 @@ namespace TuSaludEnMisManos.Controllers
 {
     public class HomeController : Controller
     {
-
-        private Stream path;
-
         public ActionResult Index()
         {
             return View();
