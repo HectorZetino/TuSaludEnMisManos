@@ -10,38 +10,38 @@ namespace LibraryClassTrees
 
         #region Add items
 
-        public void Add(T input, string nombre)
+        public void Add(T input, string nombre, int existencia)
         {
-            AddTo(input, Head, nombre);
+            AddTo(input, Head, nombre, existencia);
         }
 
-        private void AddTo(T input, AVLTreeNode<T> current, string nombre)
+        private void AddTo(T input, AVLTreeNode<T> current, string nombre, int existencia)
         {
             if (Head == null)
             {
-                Head = new AVLTreeNode<T>(input, null, this, nombre);
+                Head = new AVLTreeNode<T>(input, null, this, nombre, existencia);
                 return;
             }
             if (input.CompareTo(current.Value) < 0)
             {
                 if (current.Left == null)
                 {
-                    current.Left = new AVLTreeNode<T>(input, current, this, nombre);
+                    current.Left = new AVLTreeNode<T>(input, current, this, nombre, existencia);
                 }
                 else
                 {
-                    AddTo(input, current.Left, nombre);
+                    AddTo(input, current.Left, nombre, existencia);
                 }
             }
             else
             {
                 if (current.Right == null)
                 {
-                    current.Right = new AVLTreeNode<T>(input, current, this, nombre);
+                    current.Right = new AVLTreeNode<T>(input, current, this, nombre, existencia);
                 }
                 else
                 {
-                    AddTo(input, current.Right, nombre);
+                    AddTo(input, current.Right, nombre, existencia);
                 }
             }
 
@@ -236,6 +236,7 @@ namespace LibraryClassTrees
             var medicamento = new Medicamento<T>();
             medicamento.nombre = node._Nombre;
             medicamento.Id_medicamento = node.Value;
+            medicamento.Existencia = node._Existencia;
 
             action(medicamento);
             PreOrderTraversal(action, node.Left);
@@ -254,6 +255,7 @@ namespace LibraryClassTrees
             var medicamento = new Medicamento<T>();
             medicamento.nombre = node._Nombre;
             medicamento.Id_medicamento = node.Value;
+            medicamento.Existencia = node._Existencia;
 
             PostOrderTraversal(action, node.Left);
             PostOrderTraversal(action, node.Right);
@@ -272,6 +274,7 @@ namespace LibraryClassTrees
             var medicamento = new Medicamento<T>();
             medicamento.nombre = node._Nombre;
             medicamento.Id_medicamento = node.Value;
+            medicamento.Existencia = node._Existencia;
 
             InOrderTraversal(action, node.Left);
             action(medicamento);

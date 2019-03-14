@@ -1,1 +1,21 @@
-﻿
+﻿@model TuSaludEnMisManos.ViewModels.IndexViewModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h1>Ver Archivo</h1>
+@using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="postedFile" />
+    <input type="submit" value="Importar" />
+}
+
+
+
+
+<ul>
+    @foreach (var medicamento in Model.Medicamentos)
+    {
+        <li>@medicamento.Id_medicamento - @medicamento.nombre - @medicamento.Existencia</li>
+    }
+</ul>

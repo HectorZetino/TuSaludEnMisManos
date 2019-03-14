@@ -12,6 +12,6 @@ namespace TuSaludEnMisManos.Models
         public string descripcion { get; set; }
         public string casa_productora { get; set; }
         public string precio { get; set; }
-        public int existencia { get; set; }
+        public int Existencia { get; set; }
     }
 }

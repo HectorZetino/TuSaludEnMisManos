@@ -8,14 +8,16 @@ namespace LibraryClassTrees
         private AVLTreeNode<T> _right;
         internal AVLTree<T> _tree;
         public string _Nombre;
+        public int _Existencia;
     
 
-        public AVLTreeNode(T value, AVLTreeNode<T> parent, AVLTree<T> tree, string Nombre)
+        public AVLTreeNode(T value, AVLTreeNode<T> parent, AVLTree<T> tree, string Nombre, int Existencia)
         {
             Value = value;
             Parent = parent;
-            _Nombre = Nombre;
             _tree = tree;
+            _Nombre = Nombre;
+            _Existencia = Existencia;
         }
         public T Value { get; set; }
 
