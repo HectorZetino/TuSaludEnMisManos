@@ -5,13 +5,13 @@ using System.Web;
 
 namespace TuSaludEnMisManos.Models
 {
-    public class Medicamento<T>
+    public class Medicamento
     {
-        public T Id_medicamento { get; set; }
-        public string nombre { get; set; }
-        public string descripcion { get; set; }
-        public string casa_productora { get; set; }
-        public string precio { get; set; }
-        public int existencia { get; set; }
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public string Descripcion { get; set; }
+        public string casaProductora { get; set; }
+        public string Precio { get; set; }
+        public int Existencia { get; set; }
     }
 }
