@@ -14,9 +14,6 @@ namespace TuSaludEnMisManos.Controllers
     {
         private Stream path;
 
-        
-        
-
         public ActionResult Index()
         {
             return View();
