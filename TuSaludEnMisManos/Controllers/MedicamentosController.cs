@@ -10,10 +10,10 @@ namespace TuSaludEnMisManos.Controllers
 {
     public class MedicamentosController : Controller
     {
-        public static AVLTree.AVLTree ArbolMedicamentos = new AVLTree.AVLTree.AVLTree();
-        public static AVLTree.Medicamento[] mostrar;
-        public static List<AVLTree.Medicamento> medicamentos = new List<AVLTree.Medicamento>();
-        public static int a = 0;
+        //public static AVLTree.AVLTree ArbolMedicamentos = new AVLTree.AVLTree.AVLTree();
+        //public static AVLTree.Medicamento[] mostrar;
+        //public static List<AVLTree.Medicamento> medicamentos = new List<AVLTree.Medicamento>();
+        //public static int a = 0;
 
         // GET: Medicamentos
         public ActionResult Index()
