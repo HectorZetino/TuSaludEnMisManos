@@ -43,7 +43,6 @@
   <ItemGroup>
     <Compile Include="AVLTree.cs" />
     <Compile Include="AVLTreeNode.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Medicamento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TreeState.cs" />
