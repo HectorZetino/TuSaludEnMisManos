@@ -3,15 +3,19 @@
     ViewBag.Title = "Home Page";
 }
 
-<h1>Ver Archivo</h1>
+<div class="jumbotron">
+    <h1>Tu salud en mis manos</h1>
+    <p class="lead">En la siguiente pagina puede ver los productos disponibles y realizar pedidos.</p>
+</div>
+
+<div>
+    <h1>Ver Archivo</h1>
+</div>
 @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     <input type="file" name="postedFile" />
     <input type="submit" value="Importar" />
 }
-
-
-
 
 <ul>
     @foreach (var medicamento in Model.Medicamentos)

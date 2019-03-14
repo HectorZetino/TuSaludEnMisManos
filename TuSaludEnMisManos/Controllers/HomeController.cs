@@ -47,8 +47,6 @@ namespace TuSaludEnMisManos.Controllers
 
             return View(indexView);
         }
-      
-
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
